@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'first_app',
     'second_app',
+    'navigation_app',
 ]
 
 MIDDLEWARE = [

@@ -8,6 +8,8 @@
 <body>
     <h1>Hello I am HTML page inside first_app</h1>
     <p>Author: {{author}}</p>
+    <!-- upper case  -->
+    <p>Author: {{author | upper}}</p>
     <p>Age: {{age}}</p>
     <p>{{nums}}</p>
     <!-- Conditional Statements -->
@@ -23,5 +25,19 @@
     {% for i in courses %}
     <h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
     {% endfor %}
+
+    <!-- string join  -->
+    <h5>{{lst | join:" "}}</h5>
+
+    <!-- datetime  -->
+    <h4>{{ birthday | date:"D d M Y" }}</h4>
+
+    <!-- handle empty value by giving a default value  -->
+    <h5>{{val | default:"It is an empty string"}}</h5>
+
+    <!-- truncate strings  -->
+    <h4>{{"Happy coding, can explore a lot with Python flyer." | truncatechars:15}}</h4>
+    <h4>{{"Happy coding, can explore a lot with Python flyer." | truncatewords:5}}</h4>
+
 </body>
 </html>

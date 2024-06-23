@@ -9,7 +9,7 @@ def about(request):
     return HttpResponse("This is about page of first_app!")
 
 def home(request):
-    return HttpResponse("This is home page of first_app!")
+    return render(request, 'first_app/home.html')
 
 def contact(request):
     return HttpResponse("This is contact page of first_app!")

@@ -10,3 +10,6 @@ def about(request):
 
 def home(request):
     return HttpResponse("This is home page of first_app!")
+
+def contact(request):
+    return HttpResponse("This is contact page of first_app!")

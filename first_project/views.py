@@ -4,3 +4,6 @@ def contact(request):
 
 def home(request):
     return HttpResponse("This is home page!")
+
+def about(request):
+    return HttpResponse("This is about page!")
